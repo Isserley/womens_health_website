@@ -1,0 +1,38 @@
+<h1> New Article </h1>
+
+<%= form_for(@article) do | f | %>
+
+  <!-- <%= f.label :title %> -->
+  <p>Title<br>
+  <%= f.text_field :title %></p>
+
+  <!-- <%= f.label :author %> -->
+  <p>Author<br>
+  <%= f.text_field :author %></p>
+
+  <!-- <%= f.label :date_published %> -->
+  <p>Date published<br>
+  <%= f.text_field :date_published %></p>
+
+  <!-- <%= f.label :publication %> -->
+  <p>Publication<br>
+  <%= f.text_field :publication%></p>
+
+  <!-- <%= f.label :subject %> -->
+  <p>Subject<br>
+  <%= f.text_field :subject %></p>
+
+  <!-- <%= f.label :abstract %> -->
+  <p>Abstract<br>
+  <%= f.text_field :abstract %></p>
+
+  <!-- <%= f.label :full_article %> -->
+  <p>Full Article<br>
+  <%= f.text_field:full_article %></p>
+
+  <!-- <%= f.label :notes %> -->
+  <p>Notes<br>
+  <%= f.text_field :notes %></p>
+
+  <%= f.submit 'Save Article' %>
+<% end %>

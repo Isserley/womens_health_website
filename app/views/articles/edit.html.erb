@@ -1,0 +1,31 @@
+<h1> Edit Article </h1>
+
+<%= form_for(@article) do |f| %>
+
+<p>Title</br>
+<%= f.text_field :title %></p>
+
+<p>Author<br>
+<%= f.text_field :author %></p>
+
+<p>Date Published</br>
+<%= f.text_field :date_published %></p>
+
+<p>Publication<br>
+<%= f.text_field :publication %></p>
+
+<p>Subject<br>
+<%= f.text_area :subject %></p>
+
+<p>Abstract<br>
+<%= f.text_area :abstract %></p>
+
+<p>Full Article<br>
+<%= f.text_area :full_article %></p>
+
+<p>Notes<br>
+<%= f.text_area :notes %></p>
+
+<%= f.submit 'Save Changes' %><br>
+
+<% end %>

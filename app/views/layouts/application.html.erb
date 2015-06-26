@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secret</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<a><%= link_to 'Home', root_path %></a>
+<a><%= link_to 'About me', static_pages_about_me_path %></a>
+<a><%= link_to 'About you', static_pages_about_you_path %></a>
+<a><%= link_to 'Tips', static_pages_tips_path %></a>
+<a><%= link_to 'Articles', articles_path %></a>
+<a><%= link_to 'Contact', static_pages_contact_path %></a>
+
+
+	  <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+<%= yield %>
+
+</body>
+</html>
+
+
