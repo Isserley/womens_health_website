@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-     if @article.save
+    if @article.save
       redirect_to articles_path
     else
       render :new
@@ -38,7 +38,6 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.destroy
     redirect_to articles_path
-    else
   end
 
 private
