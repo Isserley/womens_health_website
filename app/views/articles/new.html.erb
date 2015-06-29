@@ -2,29 +2,45 @@
 
 <%= form_for(@article) do | f | %>
 
+  <p>
   <%= f.label :title %><br>
-  <%= f.text_field :title %></p>
+  <%= f.text_field :title %>
+  </p>
 
+  <p>
   <%= f.label :author %><br>
-  <%= f.text_field :author %></p>
+  <%= f.text_field :author %>
+  </p>
 
+  <p>
   <%= f.label :date_published %><br>
-  <%= f.text_field :date_published %></p>
+  <%= f.text_field :date_published %>
+  </p>
 
+  <p>
   <%= f.label :publication %><br>
-  <%= f.text_field :publication%></p>
+  <%= f.text_field :publication%>
+  </p>
 
+  <p>
   <%= f.label :subject %><br>
-  <%= f.text_field :subject %></p>
+  <%= f.text_field :subject %>
+  </p>
 
+  <p>
   <%= f.label :abstract %><br>
-  <%= f.text_area :abstract %></p>
+  <%= f.text_area :abstract %>
+  </p>
 
+  <p>
   <%= f.label :full_article %><br>
-  <%= f.text_area :full_article %></p>
+  <%= f.text_area :full_article %>
+  </p>
 
+  <p>
   <%= f.label :notes %><br>
-  <%= f.text_area :notes %></p>
+  <%= f.text_area :notes %>
+  </p>
 
   <%= f.submit 'Save Article' %>
 <% end %>
