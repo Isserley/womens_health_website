@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+
   root 'static_pages#home'
   get 'static_pages/about_me'
   get 'static_pages/about_you'
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :articles
+  resources :tips
 
 
 

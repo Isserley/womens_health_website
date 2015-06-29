@@ -1,0 +1,22 @@
+<h1> New Tip </h1>
+
+<%= form_for(@tip) do |f| %>
+  
+  <p>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+  </p>
+
+  <p>
+  <%= f.label :contributed_by %><br>
+  <%= f.text_field :contributed_by %>
+  </p>
+
+  <p>
+  <%= f.label :notes %><br>
+  <%= f.text_area :notes %>
+  </p>
+
+<%= f.submit 'Save' %><br>
+
+<% end %>
