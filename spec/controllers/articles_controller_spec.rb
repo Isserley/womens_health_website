@@ -33,7 +33,7 @@ RSpec.describe ArticlesController, type: :controller do
   end
 
   describe "PUT #update" do
-    it 'updates successfully' do
+    it 'updates article successfully' do
       new_title = 'Different Title'
       put :update, id: article.id, article: {title: new_title}
       expect(article.reload.title).to eq(new_title)
@@ -42,15 +42,17 @@ RSpec.describe ArticlesController, type: :controller do
   end
 
   describe "DELETE #destroy" do
-    it 'deletes successfully' do
+    it 'deletes article successfully' do
       delete :destroy, id: article.id
       expect(response).to have_http_status(:redirect)
     end
   end
 
   describe "POST #create" do
-    it 'creates successfully' do
-      post :create, article: {title: 'Create New Article'}
+    it 'creates new article successfully' do
+      new_title = 'Create New Article'
+      post :create, article: {title: new_title}
+      expect(article.save).to eq(true)
       expect(response).to have_http_status(:redirect)
     end
   end

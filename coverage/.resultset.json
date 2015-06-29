@@ -6,7 +6,7 @@
         null,
         1,
         null,
-        5,
+        6,
         null,
         1,
         1,
@@ -52,6 +52,8 @@
         null,
         null,
         null,
+        1,
+        1,
         1,
         1,
         1,
@@ -699,6 +701,7 @@
         null,
         null,
         1,
+        null,
         null
       ],
       "/Users/tiffanyforsyth/Desktop/secret/app/models/article.rb": [
@@ -706,6 +709,6 @@
         null
       ]
     },
-    "timestamp": 1435360449
+    "timestamp": 1435548553
   }
 }
