@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe TipsController, type: :controller do
 
+  let(:tip){FactoryGirl.create(:tip)}
+
   describe "GET #index" do
     it "returns http success" do
       get :index
@@ -18,14 +20,14 @@ RSpec.describe TipsController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do
-      get :show
+      get :show, id: tip.id
       expect(response).to have_http_status(:success)
     end
   end
 
   describe "GET #edit" do
     it "returns http success" do
-      get :edit
+      get :edit, id: tip.id
       expect(response).to have_http_status(:success)
     end
   end

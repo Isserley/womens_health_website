@@ -1,14 +1,14 @@
 <h1> Articles </h1>
 
-<p><%= link_to 'New Article', new_article_path %>
-
-<% @articles.each do | article | %>
-  <h2><%= article.title %></h2>
-  <h3><%= article.author %><h3>
-  <h3><%= article.date_published %>; <%= article.publication %></h3>
-  <p>Abstract: <%= article.abstract %></p>
-  <p><%= article.full_article %></p>
-  <p>Notes: <%= article.notes %></p>
-    <%= link_to 'Show Article', article_path(article.id) %><br>
-    <%= link_to 'Delete Article', article_path(article.id), method: :delete %>
-<% end %>
+	<% @articles.each do | article | %>
+		<div>
+	  <h3><%= article.title %></h3>
+	  <p>by <%= article.author %>, <%= article.publication %>, <%= article.date_published %></p>
+	  <p>Abstract: <%= article.abstract %></p>
+	    <%= link_to 'Read Full Article', article_path(article.id) %><br>
+	    <%= link_to 'Delete Article', article_path(article.id), method: :delete %>
+		<div>
+	<% end %>
+<div id="new_article">
+<%= link_to 'New Article', new_article_path %>
+</div>
