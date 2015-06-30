@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'static_pages/about_you'
   get 'static_pages/tips'
   get 'static_pages/contact'
+  get 'static_pages/about_it'
  
 
 
